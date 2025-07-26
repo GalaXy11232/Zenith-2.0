@@ -11,7 +11,7 @@
         align-content: center; 
         gap: 0;
     }
-    .entrance-image-container div { width: max(max(270px, 40vh), 55vw); height: auto; }
+    .entrance-image-container div { width: max(max(270px, 40vh), 45vw); height: auto; }
 }
 @media screen and not (max-width: 800px) { #navbar-dropdown-menu { height: 0 !important; } }
 

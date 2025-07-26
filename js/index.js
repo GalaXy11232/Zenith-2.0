@@ -1,3 +1,10 @@
+window.addEventListener('load', () => {
+    document.getElementById('loading').style.opacity = '0';
+    document.getElementById('loading').addEventListener('transitionend', () => { 
+        document.getElementById('loading').style.visibility = 'hidden';
+    });
+})
+
 function navbarDropdownMenuToggle(btnId) {
     let button = document.getElementById(btnId);
     let buttonParent = button.parentElement;

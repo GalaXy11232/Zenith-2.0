@@ -60,7 +60,7 @@ body {
 .entranceBG {
     top: 0;
     width: 100%; height: 100%;
-    background: var(--imgURL);
+    /* background-image: var(--imgURL); */
     background-size: cover;
 }
 .slightzoom { animation: slightZoomBG 4s ease-in-out infinite alternate; }
