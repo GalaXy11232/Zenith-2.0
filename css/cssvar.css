@@ -1,0 +1,16 @@
+:root {
+    --MAGENTA: rgb(255, 0, 255);
+    --DARKPURPLE: rgb(46, 0, 88);
+    --PURPLE: rgb(116, 0, 151);
+    --BLACK: #000;
+
+    --cl-parallax_left: rgb(194, 137, 255)/*#b71dff;*/;
+    --cl-parallax_center: #591BC5;
+    --cl-parallax_right: #212335;
+
+    --cl-main_bgcol: rgb(56, 0, 161);
+    --cl-navbar_bgcol: rgb(255, 255, 255);
+    --cl-disabled_lnk: rgb(64, 0, 94);
+
+    --navbar_borderRadius: 15;
+}

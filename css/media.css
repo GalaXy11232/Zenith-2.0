@@ -1,0 +1,17 @@
+@media screen and (max-height: 600px) and (min-width: 800px){ 
+    .entrance-image-container { flex-wrap: nowrap !important; } 
+    .entrance-image-container div { width: min(350px, 35vw); height: auto; }
+}
+
+@media screen and (max-width: 800px) { /* tablet-phone */
+    .navbar-linkslist { display: none; }
+    #navbar-dropdown-icon { display: inline-block !important; }
+    .entrance-image-container { 
+        flex-wrap: wrap !important;  
+        align-content: center; 
+        gap: 0;
+    }
+    .entrance-image-container div { width: max(max(270px, 40vh), 55vw); height: auto; }
+}
+@media screen and not (max-width: 800px) { #navbar-dropdown-menu { height: 0 !important; } }
+
