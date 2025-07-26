@@ -1,7 +1,7 @@
 window.addEventListener('load', () => {
     document.getElementById('loading').style.opacity = '0';
     document.getElementById('loading').addEventListener('transitionend', () => { 
-        document.getElementById('loading').style.visibility = 'hidden';
+        document.getElementById('loading').style.display = 'none';
     });
 })
 
