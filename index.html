@@ -8,11 +8,13 @@
     <link href = 'css/mainstyle.css' rel = 'stylesheet'>
     <link href = 'css/cssvar.css' rel = 'stylesheet'>
     <link href = 'css/media.css' rel = 'stylesheet'>
+    <link href = 'css/settings.css' rel = 'stylesheet'>
     <link rel="icon" href="Images/Atom_Zenith.png">
 
     <script src = 'js/index.js'></script>
     <script src = 'js/handleSquares.js'></script>
     <script src = 'js/settingsModal.js'></script>
+    <script src = 'js/settings.js'></script>
 
     <!-- Imported (boots + other) -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel = "stylesheet">
@@ -38,6 +40,11 @@
                         <h4 id = 'square-setting'></h4>
                     </div>
                 </div>
+
+                <div class = 'setting'>
+                    <h3>Fundal animat</h3>
+                    <a id = 'animBg-btn' class = 'setting-linkbutton' onclick = 'switchBGAnimated()'>Pornit</a>
+                </div>
             </div>
         
         </div>
@@ -45,7 +52,6 @@
 </div>
 
 <div class = "mainbody-wrapper"> <!-- Wrapper used to fix issues on pc-mobile -->
-
     <!-- <div class = 'animatedBG'></div> Under main screeen, animated background -->
     <div class = "entrance-wrapper">
         <div class = 'entranceBG slightzoom' style = 'background-image: url(../Images/hexagoane_cu_fundal_mov-min.webp);'></div>
@@ -73,7 +79,6 @@
             <a class = 'settings fa settings-gear forced-link nodeco'>&#xf013;</a>
         </div>
     </div>
-    
     <div id = 'navbar-dropdown-menu'>
         <a href = '.' class = 'inter-hover forced-link nodeco'>Home</a>
         <a class = 'inter-hover forced-link nodeco disabledLink'>Echipă</a>
@@ -85,8 +90,15 @@
         <a class = 'settings forced-link nodeco'>Setări</a>
     </div>
 
-    <!-- <button onclick = 'remove_square_last()'>bomboclat</button> -->
-    <div style = "background-color: white; padding: 30px;">aaaaaaa</div>
+    <!-- Despre noi -->
+    <div class = 'about-us'>
+        <div class = "title-wrapper">
+            <h1 class = 'title'>Despre noi</h1>
+            <hr class = 'title-hr'>
+
+            
+        </div>
+    </div>
 
 </div>
 </body>

@@ -3,12 +3,6 @@ const ANIMATION_DELAY = 2
 const INIT_SQ_NUM = 5
 
 window.addEventListener("load", () => {
-    let storageSqNum = JSON.parse(localStorage.getItem(STORAGE_ENTRYNAME))['sqNum'];;
-    document.getElementById('prg').value = storageSqNum
-    document.getElementById('square-setting').textContent = storageSqNum;
-    for (let i = 0; i < storageSqNum; i++) spawnSquare();
-
-
     document.getElementById('prg').addEventListener('input', (ev) => {
         let newVal = ev.target.value;
         document.getElementById('square-setting').textContent = newVal;

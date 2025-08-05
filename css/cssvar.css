@@ -12,5 +12,7 @@
     --cl-navbar_bgcol: rgb(255, 255, 255);
     --cl-disabled_lnk: rgb(64, 0, 94);
 
+    --legacy_bgcol: #d1c3e6;
+
     --navbar_borderRadius: 15;
 }

@@ -1,8 +1,4 @@
-const STORAGE_ENTRYNAME = "Settings";
-const defaultStorageStructure = {
-    sqNum: INIT_SQ_NUM
-}
-
+// display settinds modal
 window.addEventListener('load', () => {
     createLocalStorage();
 
@@ -20,15 +16,3 @@ document.addEventListener('mousedown', (ev) => {
     )
         document.getElementById('settings-modal').style.display = 'none';
 })
-
-
-
-function createLocalStorage() {
-    if (
-        localStorage.getItem(STORAGE_ENTRYNAME) == null ||
-        Object.keys(JSON.parse(localStorage.getItem(STORAGE_ENTRYNAME))).length != Object.keys(defaultStorageStructure).length
-    ) {
-        localStorage.setItem(STORAGE_ENTRYNAME, JSON.stringify(defaultStorageStructure));
-        console.log(`created new Storage for settings`);
-    }
-}

@@ -1,0 +1,64 @@
+.settings-gear {
+    font-size: 24px !important;
+    color: rgb(48, 48, 48);
+    transition: .15s ease;
+}
+.settings-gear:hover { transform: scale(1.3) rotate(45deg); }
+
+
+#settings-modal {
+    display: none;
+    position: fixed;
+    width: 100%; height: 100%;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+#settings-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; height: 100%;
+}
+
+#settings-content {
+    width: 80%; height: 80%;
+    margin: auto;
+    background-color: lightgray;
+    border-radius: 15px;
+}
+#settings-content h1 { 
+    text-align: center; padding: 15px; 
+    font-size: 275%; font-weight: bold; 
+}
+
+#settings-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+}
+
+.setting {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.setting input { max-width: 200px; }
+
+.setting-linkbutton {
+    color: lime;
+    background-color: var(--PURPLE);
+    padding: 5px 12px;
+    border-radius: 10px;
+    font-size: 120%;
+    font-weight: bold;
+    text-decoration: none;
+    transition: .2s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.setting-linkbutton:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px 2px var(--MAGENTA);
+}
