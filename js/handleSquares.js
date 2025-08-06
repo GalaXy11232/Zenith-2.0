@@ -42,6 +42,7 @@ function spawnSquare() {
     catch { delay_time = `0s`; }
 
     square.style.animationDelay = delay_time;
+    square.style.zIndex = '0';
 
     squareRandomizePos(square);
     square.addEventListener('animationiteration', () => { squareRandomizePos(square); });
