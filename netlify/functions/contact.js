@@ -43,9 +43,15 @@ export async function handler(event) {
     body: formData.toString()
   });
 
-  const text = await sfRes.text();
+  // const text = await sfRes.text();
   return {
-    statusCode: sfRes.status,
-    body: text
+    statusCode: 302,
+    headers: {
+      Location: "/thank-you.html"  // path to your custom thank-you page
+    }
   };
+  // return {
+  //   statusCode: sfRes.status,
+  //   body: text
+  // };
 }
