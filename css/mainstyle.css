@@ -39,7 +39,8 @@ body {
 
 .animatedBG {
     top: 0;
-    width: 100%; height: 100vh;
+    width: 100%;
+    height: 100dvh; height: 100vh;
     margin: auto;
     z-index: -1;
     background: linear-gradient(
@@ -53,7 +54,8 @@ body {
 }
 
 .entrance-wrapper {
-    width: 100%; height: 100vh;
+    width: 100%; 
+    height: 100dvh; height: 100vh;
     overflow: hidden;
     pointer-events: none;
 }
@@ -97,7 +99,7 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-align: center;
-    padding: 10px 0 0 0; 
+    padding: 10px 0 5px 0; 
     font-weight: 550;
 }
 
@@ -202,3 +204,9 @@ hr.title-hr {
 .disableTransition { transition: none !important; }
 .disableAnimation { animation: none !important; }
 .centertxt { text-align: center !important; }
+.showcaseimg {
+    border: 4px solid var(--PURPLE); border-radius: 10px;
+    box-shadow: 0 0 10px 3px var(--PURPLE);
+}
+.img_keepw90 { aspect-ratio: inherit; width: 90%; height: auto; }
+.img_keepw80 { aspect-ratio: inherit; width: 80%; height: auto; }
